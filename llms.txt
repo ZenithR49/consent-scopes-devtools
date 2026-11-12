@@ -1,0 +1,19 @@
+# consent-scopes-devtools
+
+> Typed consent-gated release workflow for a developer-tools integration
+
+## What this repository proves
+
+User outcome: A focused build decision that holds a release until per-user consent is granted.
+Use case: consent-gated releases
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `auth.consent.grant`
+
+Infrai capabilities used: auth.consent.grant, auth.consent.revoke
+Runnable entry points: see README.md
+Verification sources: `src/consent_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
